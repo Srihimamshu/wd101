@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #d9c19d;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex justify-center items-center h-screen mt-1" >
+    <div class="bg-white p-8 rounded-lg shadow-md w-full sm:w-96">
+      <h2 class="text-2xl font-semibold mb-6 text-center">Registration Form</h2>
+
+      <form id="user-form">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium text-gray-600"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="mt-1 p-2 w-full border rounded-md"
+          />
+        </div>
+
+        <div class="block">
+          <label for="email" class="block text-sm font-medium text-gray-600"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="mt-1 p-2 w-full border rounded-md"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="block text-sm font-medium text-gray-600"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="mt-1 p-2 w-full border rounded-md"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="dob" class="block text-sm font-medium text-gray-600"
+            >Date of Birth</label
+          >
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            class="mt-1 p-2 w-full border rounded-md"
+          />
+        </div>
+
+        <div class="mb-4">
+          <input type="checkbox" id="terms" name="terms" class="mr-2" />
+          <label for="terms" class="text-sm text-gray-600"
+            >I accept the <u> Terms and Conditions </u>
+          </label>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-yellow-700 text-white py-2 px-4 rounded-md hover:bg-yellow-600 focus:outline-none focus:ring focus:border-yellow-300"
+        >
+          Register
+        </button>
+      </form>
+    </div>
+</div>
+<div class="flex bg-white justify-center rounded items-center ml-8 mr-8"> 
+    <div class="w-full">
+    <div id="user-entries" > </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+
+  </body>
+</html>
